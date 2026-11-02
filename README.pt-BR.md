@@ -6,7 +6,7 @@ Uma biblioteca open source de skills de IA para várias áreas do trabalho e da 
 
 Você conecta o servidor ao seu cliente de IA, responde a um quiz curto sobre quem você é e o que faz (estudante, advogado, médico, desenvolvedor…), e ele recomenda e instala as skills que combinam com você. Cada skill é construída a partir de pesquisa aprofundada da área e cita suas fontes.
 
-> **Status:** fase inicial de documentação. O servidor e as primeiras skills ainda não existem. Veja o [roadmap](docs/roadmap.md) (em inglês).
+> **Status:** fase inicial. A documentação está pronta; o servidor e as primeiras skills ainda não existem. Marco atual e próximos passos: [plano de construção](docs/build-plan.md) (em inglês). Visão geral: [roadmap](docs/roadmap.md).
 
 ## Como funciona
 

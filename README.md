@@ -6,7 +6,7 @@ An open-source library of AI skills for many areas of work and life, delivered t
 
 You connect the server to your AI client, answer a short quiz about who you are and what you do (student, lawyer, doctor, developer…), and it recommends and installs the skills that fit you. Each skill is built from deep research of its field and cites its sources.
 
-> **Status:** early documentation phase. The server and the first skills are not built yet. See the [roadmap](docs/roadmap.md).
+> **Status:** early phase. The docs are done; the server and the first skills are not built yet. Current milestone and what's next: [build plan](docs/build-plan.md). Overview: [roadmap](docs/roadmap.md).
 
 ## How it works
 
@@ -52,6 +52,7 @@ Law · Health · Education · Software · Marketing · Finance · Small business
 - [Skill format](docs/skill-format.md)
 - [Skill matching](docs/skill-matching.md)
 - [Research process](docs/research-process.md)
+- [Build plan (milestones and status)](docs/build-plan.md)
 - [Roadmap](docs/roadmap.md)
 
 ## Contributing
