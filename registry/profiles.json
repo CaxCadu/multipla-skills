@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "areas": ["law", "health", "education", "software", "marketing", "finance", "business", "design", "creators", "general"],
+  "profiles": {
+    "student": { "label": "Student", "areas": ["education", "general"], "starter_bundle": [] },
+    "lawyer": { "label": "Lawyer", "areas": ["law", "general", "business"], "starter_bundle": [] },
+    "health-professional": { "label": "Health professional", "areas": ["health", "general"], "starter_bundle": [] },
+    "developer": { "label": "Software developer", "areas": ["software", "general"], "starter_bundle": [] },
+    "marketer": { "label": "Marketer", "areas": ["marketing", "creators", "general"], "starter_bundle": [] },
+    "finance-professional": { "label": "Finance professional", "areas": ["finance", "business", "general"], "starter_bundle": [] },
+    "business-owner": { "label": "Business owner", "areas": ["business", "finance", "marketing", "general"], "starter_bundle": [] },
+    "designer": { "label": "Designer", "areas": ["design", "creators", "general"], "starter_bundle": [] },
+    "creator": { "label": "Content creator", "areas": ["creators", "marketing", "general"], "starter_bundle": [] },
+    "curious": { "label": "Just curious", "areas": ["general"], "starter_bundle": [] }
+  }
+}

@@ -1,0 +1,94 @@
+# Architecture
+
+> Status: **planned**. Nothing here is implemented yet; this is the target design.
+
+## Components
+
+| Component | Responsibility |
+|---|---|
+| **MCP server** | Entry point. Exposes tools, prompts and resources to any MCP client. |
+| **Quiz engine** | Runs the adaptive profile quiz and produces a profile. See [profile-quiz.md](profile-quiz.md). |
+| **Profile store** | Saves the profile locally (JSON file in the user's config dir). Nothing leaves the machine. |
+| **Matcher** | Scores skills against a profile. See [skill-matching.md](skill-matching.md). |
+| **Skill registry** | Index of all skills (`registry/`), built from `skills/*/skill.json`. |
+| **Installer / client adapters** | Delivers skills in the way each client understands. |
+
+## Data flow
+
+```
+ user ──connects──▶ MCP server
+                      │ start_quiz / answer_question
+                      ▼
+                  Quiz engine ──▶ Profile store (local JSON)
+                      │
+                      ▼
+                  Matcher ◀── Skill registry
+                      │ recommend_skills
+                      ▼
+            user confirms ──▶ install_skills
+                      │
+                      ▼
+              Client adapter
+        ┌─────────────┼───────────────┐
+   Claude (files)   Codex/others   Generic MCP
+ ~/.claude/skills   (their format)  prompts + resources
+```
+
+## Dual delivery
+
+Decision record: [adr/0002-dual-delivery.md](adr/0002-dual-delivery.md).
+
+1. **Install mode.** For clients with native skill support (Claude), the adapter copies the skill folder (`SKILL.md` + `references/`, `scripts/`, `assets/`) into the client's skills directory.
+2. **Serve mode.** For clients without native skills, the same skills are exposed as MCP **prompts** (one per skill) and **resources** (`skill://<id>`), so the model loads them on demand.
+
+The skill source is always the same folder; adapters only change *how* it's delivered.
+
+## Client adapter interface (TypeScript, planned)
+
+```ts
+interface ClientAdapter {
+  id: "claude" | "openai" | "codex" | "generic";
+  detect(): Promise<boolean>;                 // is this client present?
+  skillsDir(): string | null;                 // null => serve mode only
+  install(skill: SkillPackage): Promise<void>;
+  uninstall(skillId: string): Promise<void>;
+  listInstalled(): Promise<string[]>;
+}
+```
+
+The first adapter shipped is `claude`; `generic` (serve mode) works with any MCP client from day one.
+
+## Planned repository layout
+
+```
+multipla-skills/
+├── CLAUDE.md
+├── README.md / README.pt-BR.md
+├── docs/                  # this documentation
+├── skills/                # one folder per skill (SKILL.md + skill.json)
+│   └── _template/
+├── registry/
+│   └── profiles.json      # profile → areas/tags map
+└── packages/
+    └── server/            # TypeScript MCP server (not created yet)
+        ├── src/
+        │   ├── index.ts
+        │   ├── tools/
+        │   ├── quiz/
+        │   ├── matcher/
+        │   └── adapters/
+        └── package.json
+```
+
+## Tech choices
+
+- TypeScript with the official `@modelcontextprotocol/sdk`. See [adr/0001-typescript-mcp.md](adr/0001-typescript-mcp.md).
+- Distributed with `npx multipla-skills`.
+- Transport: stdio first, Streamable HTTP later. See [mcp-server.md](mcp-server.md).
+- Skills are plain files (Markdown + JSON), so they stay reviewable in PRs and usable without the server.
+
+## Security notes
+
+- Installing skills writes files to the user's skills directory: the installer must show what will be written and ask for confirmation.
+- Skills may include scripts. Every script must be reviewed in PR, and the installer lists scripts before installing.
+- The profile is stored locally and never transmitted by the server.

@@ -1,0 +1,20 @@
+{
+  "id": "your-skill-id",
+  "name": "Skill title",
+  "version": "0.1.0",
+  "summary": "One line shown in recommendations.",
+  "language": "en",
+  "areas": ["general"],
+  "profiles": ["curious"],
+  "tags": ["example"],
+  "region": null,
+  "level": ["starting", "experienced", "expert"],
+  "risk": "low",
+  "requires_scripts": false,
+  "sources": [
+    { "title": "Source title", "url": "https://example.org", "accessed": "2026-11-02" }
+  ],
+  "last_researched": "2026-11-02",
+  "authors": ["your-github-handle"],
+  "status": "draft"
+}
