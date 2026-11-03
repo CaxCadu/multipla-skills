@@ -6,7 +6,7 @@ Guide for Claude (and other AI agents) working in this repository.
 
 **Multipla Skills** is an open-source library of skills for many areas of work and life, delivered through an **MCP server**. The user connects the server to their AI client (Claude first; GPT, Codex and others later). The server runs a short **profile quiz** (student, lawyer, doctor, developer…), then recommends and installs the skills that fit that profile. Every skill is built from **deep research** of its area and cites its sources.
 
-**Where we are:** the live status board is at the top of [docs/build-plan.md](docs/build-plan.md). Currently on **M1: Repo tooling + skill validation**. No server code exists yet. The high-level phases are in [docs/roadmap.md](docs/roadmap.md).
+**Where we are:** the live status board is at the top of [docs/build-plan.md](docs/build-plan.md). Currently on **M2: First skills batch**. No server code exists yet. The high-level phases are in [docs/roadmap.md](docs/roadmap.md).
 
 **Start of every session:** read the status board in `docs/build-plan.md`. When you finish a task, tick its checkbox; when a milestone's "Done when" holds, mark it ✅, move 🔄 to the next one, and update the date.
 

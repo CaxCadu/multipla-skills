@@ -4,19 +4,19 @@ The step-by-step plan to build Multipla Skills, split into milestones. High-leve
 
 ## Status board
 
-> **Last updated:** 2026-11-02
+> **Last updated:** 2026-11-03
 
 | | |
 |---|---|
-| **Current milestone** | 🔄 **M1: Repo tooling + skill validation** |
-| **Next** | ⏳ M2: First skills batch, then ⏳ M3: Registry index build |
-| **Last completed** | ✅ M0: Project context and docs (`bc7af9f`) |
+| **Current milestone** | 🔄 **M2: First skills batch** |
+| **Next** | ⏳ M3: Registry index build, then ⬜ M4: MCP server MVP |
+| **Last completed** | ✅ M1: Repo tooling + skill validation (`9dd21f5`, CI green) |
 
 | # | Milestone | Phase | Status |
 |---|---|---|---|
 | M0 | [Project context and docs](#m0-project-context-and-docs) | 0 | ✅ Done |
-| M1 | [Repo tooling + skill validation](#m1-repo-tooling--skill-validation) | 1 | 🔄 Current |
-| M2 | [First skills batch](#m2-first-skills-batch) | 1 | ⏳ Next |
+| M1 | [Repo tooling + skill validation](#m1-repo-tooling--skill-validation) | 1 | ✅ Done |
+| M2 | [First skills batch](#m2-first-skills-batch) | 1 | 🔄 Current |
 | M3 | [Registry index build](#m3-registry-index-build) | 1 | ⏳ Next |
 | M4 | [MCP server MVP (serve mode)](#m4-mcp-server-mvp-serve-mode) | 2 | ⬜ Planned |
 | M5 | [Profile quiz + local profile store](#m5-profile-quiz--local-profile-store) | 3 | ⬜ Planned |
@@ -69,7 +69,7 @@ Legend: ✅ done · 🔄 in progress · ⏳ next up · ⬜ planned
 - [x] Validator self-test (`npm run test:validator`): good skill passes, 9 broken variants fail
 - [x] `.github/workflows/ci.yml` running typecheck, validation, link check and self-test on PRs
 - [x] Issue templates (new skill, bug) and a PR template mirroring the checklist in [CONTRIBUTING.md](../CONTRIBUTING.md)
-- [ ] CI is green on `main` after the push (confirm on GitHub, then mark M1 ✅)
+- [x] CI is green on `main` after the push (run 41695656881, 2026-11-03)
 
 **Deliverables:** `package.json`, `schemas/`, `scripts/`, `.github/`.
 **Done when:** `npm run validate` passes on `_template`, fails on a deliberately broken skill, and CI is green on `main`.
