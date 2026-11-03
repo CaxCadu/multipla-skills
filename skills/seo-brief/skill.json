@@ -1,0 +1,29 @@
+{
+  "id": "seo-brief",
+  "name": "SEO brief",
+  "version": "0.1.0",
+  "summary": "A people-first SEO content brief with title, headings, links and trust signals.",
+  "language": "en",
+  "areas": ["marketing", "creators"],
+  "profiles": ["marketer", "creator", "business-owner"],
+  "tags": ["seo", "content", "brief", "copywriting", "search"],
+  "region": null,
+  "level": ["starting", "experienced"],
+  "risk": "low",
+  "requires_scripts": false,
+  "sources": [
+    {
+      "title": "Creating helpful, reliable, people-first content - Google Search Central",
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "accessed": "2026-11-03"
+    },
+    {
+      "title": "SEO Starter Guide: The Basics - Google Search Central",
+      "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+      "accessed": "2026-11-03"
+    }
+  ],
+  "last_researched": "2026-11-03",
+  "authors": ["CaxCadu"],
+  "status": "draft"
+}

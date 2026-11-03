@@ -1,0 +1,29 @@
+{
+  "id": "code-review",
+  "name": "Code review",
+  "version": "0.1.0",
+  "summary": "Prioritized code review using a design, tests, complexity and docs checklist.",
+  "language": "en",
+  "areas": ["software"],
+  "profiles": ["developer"],
+  "tags": ["code-review", "pull-request", "quality", "testing", "engineering"],
+  "region": null,
+  "level": ["starting", "experienced", "expert"],
+  "risk": "low",
+  "requires_scripts": false,
+  "sources": [
+    {
+      "title": "The Standard of Code Review - Google eng-practices",
+      "url": "https://google.github.io/eng-practices/review/reviewer/standard.html",
+      "accessed": "2026-11-03"
+    },
+    {
+      "title": "What to look for in a code review - Google eng-practices",
+      "url": "https://google.github.io/eng-practices/review/reviewer/looking-for.html",
+      "accessed": "2026-11-03"
+    }
+  ],
+  "last_researched": "2026-11-03",
+  "authors": ["CaxCadu"],
+  "status": "draft"
+}

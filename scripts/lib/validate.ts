@@ -149,8 +149,8 @@ export function validateRepo(root: string, skillsDirName = "skills"): Issue[] {
     }
 
     // high-risk skills need a disclaimer section
-    if (m.risk === "high" && !/^#{2,3}\s+Limits and disclaimer\b/im.test(md)) {
-      issues.push({ level: "error", where: `${where}/SKILL.md`, message: 'risk "high" requires a "Limits and disclaimer" section' });
+    if (m.risk === "high" && !/^#{2,3}\s+(Limits and disclaimer|Limites e aviso)\b/im.test(md)) {
+      issues.push({ level: "error", where: `${where}/SKILL.md`, message: 'risk "high" requires a "Limits and disclaimer" section (pt-BR: "Limites e aviso")' });
     }
 
     // scripts consistency

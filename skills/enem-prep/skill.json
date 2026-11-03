@@ -1,0 +1,29 @@
+{
+  "id": "enem-prep",
+  "name": "Preparação para o Enem",
+  "version": "0.1.0",
+  "summary": "Plano de estudos para o Enem pela estrutura oficial da prova e feedback de redação por competências.",
+  "language": "pt-BR",
+  "areas": ["education"],
+  "profiles": ["student"],
+  "tags": ["enem", "vestibular", "redacao", "cronograma", "estudos"],
+  "region": "BR",
+  "level": ["starting", "experienced"],
+  "risk": "low",
+  "requires_scripts": false,
+  "sources": [
+    {
+      "title": "Como funciona o Enem: guia completo para acesso ao ensino superior em 15 minutos - MEC",
+      "url": "https://www.gov.br/mec/pt-br/enem/fique-por-dentro/como-funciona-o-enem-guia-completo-para-acesso-ao-ensino-superior-em-15-minutos",
+      "accessed": "2026-11-03"
+    },
+    {
+      "title": "Enem 2026: cartilha da redação está disponível - Inep",
+      "url": "https://www.gov.br/inep/pt-br/centrais-de-conteudo/noticias/enem/enem-2026-cartilha-da-redacao-esta-disponivel",
+      "accessed": "2026-11-03"
+    }
+  ],
+  "last_researched": "2026-11-03",
+  "authors": ["CaxCadu"],
+  "status": "draft"
+}

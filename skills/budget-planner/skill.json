@@ -1,0 +1,29 @@
+{
+  "id": "budget-planner",
+  "name": "Budget planner",
+  "version": "0.1.0",
+  "summary": "Build a monthly budget: list income, list expenses, subtract, then plan from real numbers.",
+  "language": "en",
+  "areas": ["finance"],
+  "profiles": ["student", "business-owner", "finance-professional", "curious"],
+  "tags": ["budget", "personal-finance", "spending", "savings", "planning"],
+  "region": null,
+  "level": ["starting", "experienced"],
+  "risk": "high",
+  "requires_scripts": false,
+  "sources": [
+    {
+      "title": "Make a Budget worksheet - FTC (consumer.gov), September 2012",
+      "url": "https://www.bulkorder.ftc.gov/system/files/publications/pdf-1020-make-budget-worksheet.pdf",
+      "accessed": "2026-11-03"
+    },
+    {
+      "title": "Monthly budget tool - CFPB, Your Money, Your Goals companion guide",
+      "url": "https://files.consumerfinance.gov/f/documents/cfpb_well-being_monthly-budget.pdf",
+      "accessed": "2026-11-03"
+    }
+  ],
+  "last_researched": "2026-11-03",
+  "authors": ["CaxCadu"],
+  "status": "draft"
+}

@@ -1,4 +1,4 @@
-import { cpSync, mkdirSync, mkdtempSync, rmSync, writeFileSync } from "node:fs";
+import { cpSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join, dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -38,7 +38,12 @@ function makeRepo(opts: Opts): string {
   const root = mkdtempSync(join(tmpdir(), "multipla-test-"));
   cpSync(join(repo, "schemas"), join(root, "schemas"), { recursive: true });
   mkdirSync(join(root, "registry"));
-  cpSync(join(repo, "registry", "profiles.json"), join(root, "registry", "profiles.json"));
+  // Use the real profile map, but with empty starter bundles (the temp repo has only one skill).
+  const profiles = JSON.parse(readFileSync(join(repo, "registry", "profiles.json"), "utf-8")) as {
+    profiles: Record<string, { starter_bundle: string[] }>;
+  };
+  for (const p of Object.values(profiles.profiles)) p.starter_bundle = [];
+  writeFileSync(join(root, "registry", "profiles.json"), JSON.stringify(profiles, null, 2));
   const meta = { ...baseMeta, ...(opts.meta ?? {}) };
   const dir = join(root, "skills", opts.folder ?? "good-skill");
   mkdirSync(join(dir, "references"), { recursive: true });

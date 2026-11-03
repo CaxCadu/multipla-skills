@@ -1,0 +1,24 @@
+{
+  "id": "weekly-review",
+  "name": "Weekly review",
+  "version": "0.1.0",
+  "summary": "A guided weekly review: clear inboxes, update lists, pick next week's top three.",
+  "language": "en",
+  "areas": ["general"],
+  "profiles": ["curious", "student", "developer", "marketer", "business-owner", "creator", "designer", "lawyer", "health-professional", "finance-professional"],
+  "tags": ["productivity", "planning", "gtd", "review", "tasks"],
+  "region": null,
+  "level": ["starting", "experienced", "expert"],
+  "risk": "low",
+  "requires_scripts": false,
+  "sources": [
+    {
+      "title": "The GTD Weekly Review - Getting Things Done",
+      "url": "https://gettingthingsdone.com/2009/05/the-gtd-weekly-review/",
+      "accessed": "2026-11-03"
+    }
+  ],
+  "last_researched": "2026-11-03",
+  "authors": ["CaxCadu"],
+  "status": "draft"
+}

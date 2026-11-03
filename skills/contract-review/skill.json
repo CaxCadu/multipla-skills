@@ -1,0 +1,34 @@
+{
+  "id": "contract-review",
+  "name": "Contract review",
+  "version": "0.1.0",
+  "summary": "Clause-by-clause contract review with risk flags and questions for a lawyer.",
+  "language": "en",
+  "areas": ["law", "business"],
+  "profiles": ["lawyer", "business-owner"],
+  "tags": ["contracts", "risk", "negotiation", "clauses", "due-diligence"],
+  "region": null,
+  "level": ["starting", "experienced", "expert"],
+  "risk": "high",
+  "requires_scripts": false,
+  "sources": [
+    {
+      "title": "contract - Wex, Legal Information Institute (Cornell Law School)",
+      "url": "https://www.law.cornell.edu/wex/contract",
+      "accessed": "2026-11-03"
+    },
+    {
+      "title": "indemnify - Wex, Legal Information Institute (Cornell Law School)",
+      "url": "https://www.law.cornell.edu/wex/indemnify",
+      "accessed": "2026-11-03"
+    },
+    {
+      "title": "unconscionability - Wex, Legal Information Institute (Cornell Law School)",
+      "url": "https://www.law.cornell.edu/wex/unconscionability",
+      "accessed": "2026-11-03"
+    }
+  ],
+  "last_researched": "2026-11-03",
+  "authors": ["CaxCadu"],
+  "status": "draft"
+}

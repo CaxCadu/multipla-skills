@@ -83,15 +83,18 @@ Legend: ✅ done · 🔄 in progress · ⏳ next up · ⬜ planned
 **Goal:** Prove the format with real, researched content across several areas.
 **Depends on:** M1.
 
-- [ ] Research and write 7 skills from [roadmap.md](roadmap.md): `contract-review` (law), `soap-notes` (health), `study-planner` (education), `code-review` (software), `seo-brief` (marketing), `budget-planner` (finance), `weekly-review` (general)
-- [ ] Research and write 3 Brazil-specific skills from [taxonomy.md](taxonomy.md): `lgpd-compliance-check`, `enem-prep`, `irpf-organizer`
-- [ ] Each skill has `references/sources.md` and `references/examples.md` (3+ test prompts)
-- [ ] High-risk skills (law, health, finance) include a disclaimer and a reviewer note
-- [ ] Fill `starter_bundle` for the profiles covered in `registry/profiles.json`
-- [ ] All skills reach `status: "reviewed"`
+- [x] Research and write 7 skills from [roadmap.md](roadmap.md): `contract-review` (law), `soap-notes` (health), `study-planner` (education), `code-review` (software), `seo-brief` (marketing), `budget-planner` (finance), `weekly-review` (general)
+- [x] Research and write 3 Brazil-specific skills from [taxonomy.md](taxonomy.md): `lgpd-compliance-check`, `enem-prep`, `irpf-organizer` (written in pt-BR)
+- [x] Each skill has `references/sources.md` and `references/examples.md` (3+ test prompts)
+- [x] High-risk skills (law, health, finance) include a disclaimer and a note of what was not verified
+- [x] Fill `starter_bundle` for every profile in `registry/profiles.json`
+- [ ] Close the verification gaps listed in each `references/sources.md` ("Not verified" sections), mainly: the full SOAP chapter, the INEP essay booklet PDF, the LGPD arts. 46–49, the clause checklist in `contract-review`, and the less common IRPF deductions (alimony, supplementary pension, livro-caixa)
+- [ ] Human review: every skill is `status: "draft"`; at least one reviewer other than the author checks each one, and a domain practitioner reviews the `risk: "high"` ones (law, health, finance), then status moves to `reviewed`
+
+**Status (2026-11-03):** 10/10 skills written and passing `npm run validate`, all still `draft`. M2 is complete only after the two open items above.
 
 **Deliverables:** `skills/<id>/` ×10, updated `registry/profiles.json`.
-**Done when:** ~10 skills across at least 5 areas pass `npm run validate` and were reviewed by someone other than the author.
+**Done when:** ~10 skills across at least 5 areas pass `npm run validate` and were reviewed by someone other than the author. (If review takes long, M3 can start in parallel since the registry index also works with `draft` skills.)
 
 ---
 

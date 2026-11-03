@@ -39,7 +39,7 @@ This skill supports, and does not replace, a licensed lawyer.
 Rules:
 - `description` says **what it does and when to trigger it**, in one or two sentences. This is what makes the model pick the skill.
 - Keep `SKILL.md` focused (aim for under ~500 lines); move long material into `references/` and link to it.
-- Regulated areas (`risk: "high"`) must include a **Limits and disclaimer** section.
+- Regulated areas (`risk: "high"`) must include a **Limits and disclaimer** section (in Portuguese skills: **Limites e aviso**).
 - Claims drawn from research must be traceable to `references/sources.md` and `skill.json#sources`.
 
 ## skill.json

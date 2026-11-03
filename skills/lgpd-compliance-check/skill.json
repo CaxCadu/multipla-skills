@@ -1,0 +1,29 @@
+{
+  "id": "lgpd-compliance-check",
+  "name": "Diagnóstico de conformidade com a LGPD",
+  "version": "0.1.0",
+  "summary": "Checklist inicial de adequação à LGPD: papéis, mapa de tratamento, bases legais, direitos e segurança.",
+  "language": "pt-BR",
+  "areas": ["law", "business"],
+  "profiles": ["lawyer", "business-owner"],
+  "tags": ["lgpd", "privacidade", "protecao-de-dados", "compliance", "anpd"],
+  "region": "BR",
+  "level": ["starting", "experienced"],
+  "risk": "high",
+  "requires_scripts": false,
+  "sources": [
+    {
+      "title": "Lei nº 13.709, de 14 de agosto de 2018 (Lei Geral de Proteção de Dados Pessoais) - Planalto",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+      "accessed": "2026-11-03"
+    },
+    {
+      "title": "ANPD publica Guia de Segurança da Informação para Agentes de Tratamento de Pequeno Porte - gov.br/anpd",
+      "url": "https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-publica-guia-de-seguranca-para-agentes-de-tratamento-de-pequeno-porte",
+      "accessed": "2026-11-03"
+    }
+  ],
+  "last_researched": "2026-11-03",
+  "authors": ["CaxCadu"],
+  "status": "draft"
+}

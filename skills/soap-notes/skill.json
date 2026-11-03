@@ -1,0 +1,24 @@
+{
+  "id": "soap-notes",
+  "name": "SOAP notes",
+  "version": "0.1.0",
+  "summary": "Organizes clinician-provided visit information into a draft SOAP note for review.",
+  "language": "en",
+  "areas": ["health"],
+  "profiles": ["health-professional"],
+  "tags": ["clinical-documentation", "soap", "notes", "healthcare"],
+  "region": null,
+  "level": ["starting", "experienced", "expert"],
+  "risk": "high",
+  "requires_scripts": false,
+  "sources": [
+    {
+      "title": "SOAP Notes - StatPearls (Podder V, Lew V, Ghassemzadeh S), PMID 29489268, NBK482263",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29489268/",
+      "accessed": "2026-11-03"
+    }
+  ],
+  "last_researched": "2026-11-03",
+  "authors": ["CaxCadu"],
+  "status": "draft"
+}

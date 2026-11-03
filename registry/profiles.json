@@ -2,15 +2,15 @@
   "version": 1,
   "areas": ["law", "health", "education", "software", "marketing", "finance", "business", "design", "creators", "general"],
   "profiles": {
-    "student": { "label": "Student", "areas": ["education", "general"], "starter_bundle": [] },
-    "lawyer": { "label": "Lawyer", "areas": ["law", "general", "business"], "starter_bundle": [] },
-    "health-professional": { "label": "Health professional", "areas": ["health", "general"], "starter_bundle": [] },
-    "developer": { "label": "Software developer", "areas": ["software", "general"], "starter_bundle": [] },
-    "marketer": { "label": "Marketer", "areas": ["marketing", "creators", "general"], "starter_bundle": [] },
-    "finance-professional": { "label": "Finance professional", "areas": ["finance", "business", "general"], "starter_bundle": [] },
-    "business-owner": { "label": "Business owner", "areas": ["business", "finance", "marketing", "general"], "starter_bundle": [] },
-    "designer": { "label": "Designer", "areas": ["design", "creators", "general"], "starter_bundle": [] },
-    "creator": { "label": "Content creator", "areas": ["creators", "marketing", "general"], "starter_bundle": [] },
-    "curious": { "label": "Just curious", "areas": ["general"], "starter_bundle": [] }
+    "student": { "label": "Student", "areas": ["education", "general"], "starter_bundle": ["study-planner", "weekly-review", "enem-prep"] },
+    "lawyer": { "label": "Lawyer", "areas": ["law", "general", "business"], "starter_bundle": ["contract-review", "lgpd-compliance-check", "weekly-review"] },
+    "health-professional": { "label": "Health professional", "areas": ["health", "general"], "starter_bundle": ["soap-notes", "weekly-review"] },
+    "developer": { "label": "Software developer", "areas": ["software", "general"], "starter_bundle": ["code-review", "weekly-review"] },
+    "marketer": { "label": "Marketer", "areas": ["marketing", "creators", "general"], "starter_bundle": ["seo-brief", "weekly-review"] },
+    "finance-professional": { "label": "Finance professional", "areas": ["finance", "business", "general"], "starter_bundle": ["budget-planner", "irpf-organizer", "weekly-review"] },
+    "business-owner": { "label": "Business owner", "areas": ["business", "finance", "marketing", "general"], "starter_bundle": ["budget-planner", "contract-review", "lgpd-compliance-check", "weekly-review"] },
+    "designer": { "label": "Designer", "areas": ["design", "creators", "general"], "starter_bundle": ["weekly-review"] },
+    "creator": { "label": "Content creator", "areas": ["creators", "marketing", "general"], "starter_bundle": ["seo-brief", "weekly-review"] },
+    "curious": { "label": "Just curious", "areas": ["general"], "starter_bundle": ["weekly-review", "budget-planner"] }
   }
 }
