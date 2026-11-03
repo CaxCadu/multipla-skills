@@ -15,6 +15,15 @@ Thanks for helping! The most valuable contribution is a well-researched skill. P
 4. Add `references/sources.md` and `references/examples.md` (3+ realistic test prompts).
 5. Open a PR with `status: "draft"`. A reviewer moves it to `reviewed`.
 
+## Check your work locally
+
+```bash
+npm install
+npm run check
+```
+
+This runs the typecheck, validates every skill and the registry against the schemas in `schemas/`, checks Markdown links, and runs the validator's self-test. CI runs the same checks on every PR.
+
 ## PR checklist
 
 - [ ] Folder name = `name` in frontmatter = `id` in `skill.json`

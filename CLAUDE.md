@@ -29,6 +29,8 @@ connect MCP → quiz → local profile → match skills → user confirms → de
 | `docs/build-plan.md` | **Milestones and live status** (current / next) |
 | `docs/roadmap.md` | Phases and open questions |
 | `docs/adr/` | Decision records |
+| `schemas/` | JSON Schemas for `skill.json` and `registry/profiles.json` |
+| `scripts/` | Validator, link checker (run with `npm run check`) |
 | `skills/` | One folder per skill; `_template/` to copy |
 | `registry/profiles.json` | Profile → areas map |
 | `packages/server/` | TypeScript MCP server (planned, not created) |

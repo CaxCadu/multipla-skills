@@ -56,21 +56,25 @@ Legend: ✅ done · 🔄 in progress · ⏳ next up · ⬜ planned
 **Goal:** Automatically check that every skill and registry file is valid, so quality is enforced from the first contribution.
 **Depends on:** M0.
 
-- [ ] Root `package.json` with npm workspaces, `tsconfig.base.json`, Node ≥ 20
-- [ ] `schemas/skill.schema.json` matching the fields in [skill-format.md](skill-format.md)
-- [ ] `schemas/profiles.schema.json` for `registry/profiles.json`
-- [ ] `scripts/validate-skills.ts` checking:
-  - [ ] folder name = frontmatter `name` = `skill.json#id`
-  - [ ] every `areas` and `profiles` value exists in `registry/profiles.json`
-  - [ ] `risk: "high"` skills have a **Limits and disclaimer** section
-  - [ ] `sources` is not empty and `last_researched` is set
-  - [ ] `requires_scripts` is true when `scripts/` has files
-- [ ] Markdown link checker script (relative links)
-- [ ] `.github/workflows/ci.yml` running validation and link check on PRs
-- [ ] Issue templates (new skill, bug) and a PR template mirroring the checklist in [CONTRIBUTING.md](../CONTRIBUTING.md)
+- [x] Root `package.json` with npm workspaces, `tsconfig.base.json`, Node ≥ 20
+- [x] `schemas/skill.schema.json` matching the fields in [skill-format.md](skill-format.md)
+- [x] `schemas/profiles.schema.json` for `registry/profiles.json`
+- [x] `scripts/validate-skills.ts` checking:
+  - [x] folder name = frontmatter `name` = `skill.json#id`
+  - [x] every `areas` and `profiles` value exists in `registry/profiles.json`
+  - [x] `risk: "high"` skills have a **Limits and disclaimer** section
+  - [x] `sources` is not empty and `last_researched` is set
+  - [x] `requires_scripts` is true when `scripts/` has files
+- [x] Markdown link checker script (relative links)
+- [x] Validator self-test (`npm run test:validator`): good skill passes, 9 broken variants fail
+- [x] `.github/workflows/ci.yml` running typecheck, validation, link check and self-test on PRs
+- [x] Issue templates (new skill, bug) and a PR template mirroring the checklist in [CONTRIBUTING.md](../CONTRIBUTING.md)
+- [ ] CI is green on `main` after the push (confirm on GitHub, then mark M1 ✅)
 
 **Deliverables:** `package.json`, `schemas/`, `scripts/`, `.github/`.
 **Done when:** `npm run validate` passes on `_template`, fails on a deliberately broken skill, and CI is green on `main`.
+
+**Run locally:** `npm install`, then `npm run check` (typecheck + validate + links + self-test).
 
 ---
 
