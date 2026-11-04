@@ -22,7 +22,7 @@ npm install
 npm run check
 ```
 
-This runs the typecheck, validates every skill and the registry against the schemas in `schemas/`, checks Markdown links, and runs the validator's self-test. CI runs the same checks on every PR.
+This runs the typecheck, validates every skill and the registry against the schemas in `schemas/`, checks Markdown links, checks that `registry/index.json` is up to date, and runs the self-tests. If you changed any `skill.json`, run `npm run build:registry` first and commit the regenerated `registry/index.json`. CI runs the same checks on every PR.
 
 ## PR checklist
 

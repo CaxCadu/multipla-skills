@@ -24,5 +24,9 @@ jobs:
         run: npm run validate
       - name: Check markdown links
         run: npm run check:links
+      - name: Registry index is up to date
+        run: npm run check:registry
       - name: Validator self-test
         run: npm run test:validator
+      - name: Registry self-test
+        run: npm run test:registry

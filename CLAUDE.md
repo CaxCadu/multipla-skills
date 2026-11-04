@@ -6,7 +6,7 @@ Guide for Claude (and other AI agents) working in this repository.
 
 **Multipla Skills** is an open-source library of skills for many areas of work and life, delivered through an **MCP server**. The user connects the server to their AI client (Claude first; GPT, Codex and others later). The server runs a short **profile quiz** (student, lawyer, doctor, developer…), then recommends and installs the skills that fit that profile. Every skill is built from **deep research** of its area and cites its sources.
 
-**Where we are:** the live status board is at the top of [docs/build-plan.md](docs/build-plan.md). Currently on **M2: First skills batch**. No server code exists yet. The high-level phases are in [docs/roadmap.md](docs/roadmap.md).
+**Where we are:** the live status board is at the top of [docs/build-plan.md](docs/build-plan.md). Currently on **M2: First skills batch** (waiting on review; M3 is done). No server code exists yet. The high-level phases are in [docs/roadmap.md](docs/roadmap.md).
 
 **Start of every session:** read the status board in `docs/build-plan.md`. When you finish a task, tick its checkbox; when a milestone's "Done when" holds, mark it ✅, move 🔄 to the next one, and update the date.
 
@@ -30,7 +30,8 @@ connect MCP → quiz → local profile → match skills → user confirms → de
 | `docs/roadmap.md` | Phases and open questions |
 | `docs/adr/` | Decision records |
 | `schemas/` | JSON Schemas for `skill.json` and `registry/profiles.json` |
-| `scripts/` | Validator, link checker (run with `npm run check`) |
+| `scripts/` | Validator, link checker, registry builder (run with `npm run check`) |
+| `registry/index.json` | Generated skill index; rebuild with `npm run build:registry` after editing any `skill.json` |
 | `skills/` | One folder per skill; `_template/` to copy |
 | `registry/profiles.json` | Profile → areas map |
 | `packages/server/` | TypeScript MCP server (planned, not created) |

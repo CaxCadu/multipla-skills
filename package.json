@@ -16,7 +16,10 @@
     "check:links": "tsx scripts/check-links.ts",
     "typecheck": "tsc --noEmit -p tsconfig.json",
     "test:validator": "tsx scripts/test-validator.ts",
-    "check": "npm run typecheck && npm run validate && npm run check:links && npm run test:validator"
+    "build:registry": "tsx scripts/build-registry.ts",
+    "check:registry": "tsx scripts/build-registry.ts --check",
+    "test:registry": "tsx scripts/test-registry.ts",
+    "check": "npm run typecheck && npm run validate && npm run check:links && npm run check:registry && npm run test:validator && npm run test:registry"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",

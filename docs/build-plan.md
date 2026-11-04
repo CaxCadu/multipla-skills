@@ -4,21 +4,21 @@ The step-by-step plan to build Multipla Skills, split into milestones. High-leve
 
 ## Status board
 
-> **Last updated:** 2026-11-03
+> **Last updated:** 2026-11-04
 
 | | |
 |---|---|
 | **Current milestone** | 🔄 **M2: First skills batch** |
-| **Next** | ⏳ M3: Registry index build, then ⬜ M4: MCP server MVP |
-| **Last completed** | ✅ M1: Repo tooling + skill validation (`9dd21f5`, CI green) |
+| **Next** | ⏳ M4: MCP server MVP (serve mode) |
+| **Last completed** | ✅ M3: Registry index build (M1 before it: `9dd21f5`, CI green) |
 
 | # | Milestone | Phase | Status |
 |---|---|---|---|
 | M0 | [Project context and docs](#m0-project-context-and-docs) | 0 | ✅ Done |
 | M1 | [Repo tooling + skill validation](#m1-repo-tooling--skill-validation) | 1 | ✅ Done |
 | M2 | [First skills batch](#m2-first-skills-batch) | 1 | 🔄 Current |
-| M3 | [Registry index build](#m3-registry-index-build) | 1 | ⏳ Next |
-| M4 | [MCP server MVP (serve mode)](#m4-mcp-server-mvp-serve-mode) | 2 | ⬜ Planned |
+| M3 | [Registry index build](#m3-registry-index-build) | 1 | ✅ Done |
+| M4 | [MCP server MVP (serve mode)](#m4-mcp-server-mvp-serve-mode) | 2 | ⏳ Next |
 | M5 | [Profile quiz + local profile store](#m5-profile-quiz--local-profile-store) | 3 | ⬜ Planned |
 | M6 | [Matcher + recommend_skills](#m6-matcher--recommend_skills) | 3 | ⬜ Planned |
 | M7 | [Install mode + Claude adapter](#m7-install-mode--claude-adapter) | 4 | ⬜ Planned |
@@ -101,14 +101,15 @@ Legend: ✅ done · 🔄 in progress · ⏳ next up · ⬜ planned
 ## M3: Registry index build
 
 **Goal:** One generated index the server and matcher can load quickly.
-**Depends on:** M1, M2 (needs real skills to index).
+**Depends on:** M1, M2 (needs real skills to index; it works with `draft` skills, so it did not wait for the review).
 
-- [ ] `scripts/build-registry.ts` generates `registry/index.json` from `skills/*/skill.json` (skips `_template`)
-- [ ] `schemas/index.schema.json`
-- [ ] CI fails if `registry/index.json` is out of date
-- [ ] Docs updated in [architecture.md](architecture.md)
+- [x] `scripts/build-registry.ts` generates `registry/index.json` from `skills/*/skill.json` (skips `_template`)
+- [x] `schemas/index.schema.json`
+- [x] CI fails if `registry/index.json` is out of date (`npm run check:registry`)
+- [x] Self-test (`npm run test:registry`): deterministic output, `_template` skipped, stale index detected
+- [x] Docs updated in [architecture.md](architecture.md), [CONTRIBUTING.md](../CONTRIBUTING.md) and `CLAUDE.md`
 
-**Done when:** `npm run build:registry` is deterministic and CI catches a stale index.
+**Done when:** `npm run build:registry` is deterministic and CI catches a stale index. ✅ (2026-11-04; the CI run on `main` is confirmed after the push)
 
 ---
 

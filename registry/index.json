@@ -1,0 +1,373 @@
+{
+  "schema_version": 1,
+  "count": 10,
+  "skills": [
+    {
+      "id": "budget-planner",
+      "name": "Budget planner",
+      "version": "0.1.0",
+      "summary": "Build a monthly budget: list income, list expenses, subtract, then plan from real numbers.",
+      "language": "en",
+      "areas": [
+        "finance"
+      ],
+      "profiles": [
+        "student",
+        "business-owner",
+        "finance-professional",
+        "curious"
+      ],
+      "tags": [
+        "budget",
+        "personal-finance",
+        "spending",
+        "savings",
+        "planning"
+      ],
+      "region": null,
+      "level": [
+        "starting",
+        "experienced"
+      ],
+      "risk": "high",
+      "requires_scripts": false,
+      "last_researched": "2026-11-03",
+      "authors": [
+        "CaxCadu"
+      ],
+      "status": "draft",
+      "sources_count": 2,
+      "path": "skills/budget-planner"
+    },
+    {
+      "id": "code-review",
+      "name": "Code review",
+      "version": "0.1.0",
+      "summary": "Prioritized code review using a design, tests, complexity and docs checklist.",
+      "language": "en",
+      "areas": [
+        "software"
+      ],
+      "profiles": [
+        "developer"
+      ],
+      "tags": [
+        "code-review",
+        "pull-request",
+        "quality",
+        "testing",
+        "engineering"
+      ],
+      "region": null,
+      "level": [
+        "starting",
+        "experienced",
+        "expert"
+      ],
+      "risk": "low",
+      "requires_scripts": false,
+      "last_researched": "2026-11-03",
+      "authors": [
+        "CaxCadu"
+      ],
+      "status": "draft",
+      "sources_count": 2,
+      "path": "skills/code-review"
+    },
+    {
+      "id": "contract-review",
+      "name": "Contract review",
+      "version": "0.1.0",
+      "summary": "Clause-by-clause contract review with risk flags and questions for a lawyer.",
+      "language": "en",
+      "areas": [
+        "law",
+        "business"
+      ],
+      "profiles": [
+        "lawyer",
+        "business-owner"
+      ],
+      "tags": [
+        "contracts",
+        "risk",
+        "negotiation",
+        "clauses",
+        "due-diligence"
+      ],
+      "region": null,
+      "level": [
+        "starting",
+        "experienced",
+        "expert"
+      ],
+      "risk": "high",
+      "requires_scripts": false,
+      "last_researched": "2026-11-03",
+      "authors": [
+        "CaxCadu"
+      ],
+      "status": "draft",
+      "sources_count": 3,
+      "path": "skills/contract-review"
+    },
+    {
+      "id": "enem-prep",
+      "name": "Preparação para o Enem",
+      "version": "0.1.0",
+      "summary": "Plano de estudos para o Enem pela estrutura oficial da prova e feedback de redação por competências.",
+      "language": "pt-BR",
+      "areas": [
+        "education"
+      ],
+      "profiles": [
+        "student"
+      ],
+      "tags": [
+        "enem",
+        "vestibular",
+        "redacao",
+        "cronograma",
+        "estudos"
+      ],
+      "region": "BR",
+      "level": [
+        "starting",
+        "experienced"
+      ],
+      "risk": "low",
+      "requires_scripts": false,
+      "last_researched": "2026-11-03",
+      "authors": [
+        "CaxCadu"
+      ],
+      "status": "draft",
+      "sources_count": 2,
+      "path": "skills/enem-prep"
+    },
+    {
+      "id": "irpf-organizer",
+      "name": "Organizador do IRPF",
+      "version": "0.1.0",
+      "summary": "Organiza documentos e checa obrigatoriedade do IRPF; compara desconto simplificado e deduções.",
+      "language": "pt-BR",
+      "areas": [
+        "finance"
+      ],
+      "profiles": [
+        "finance-professional",
+        "business-owner",
+        "student",
+        "curious"
+      ],
+      "tags": [
+        "irpf",
+        "imposto-de-renda",
+        "receita-federal",
+        "declaracao",
+        "documentos"
+      ],
+      "region": "BR",
+      "level": [
+        "starting",
+        "experienced"
+      ],
+      "risk": "high",
+      "requires_scripts": false,
+      "last_researched": "2026-11-03",
+      "authors": [
+        "CaxCadu"
+      ],
+      "status": "draft",
+      "sources_count": 1,
+      "path": "skills/irpf-organizer"
+    },
+    {
+      "id": "lgpd-compliance-check",
+      "name": "Diagnóstico de conformidade com a LGPD",
+      "version": "0.1.0",
+      "summary": "Checklist inicial de adequação à LGPD: papéis, mapa de tratamento, bases legais, direitos e segurança.",
+      "language": "pt-BR",
+      "areas": [
+        "law",
+        "business"
+      ],
+      "profiles": [
+        "lawyer",
+        "business-owner"
+      ],
+      "tags": [
+        "lgpd",
+        "privacidade",
+        "protecao-de-dados",
+        "compliance",
+        "anpd"
+      ],
+      "region": "BR",
+      "level": [
+        "starting",
+        "experienced"
+      ],
+      "risk": "high",
+      "requires_scripts": false,
+      "last_researched": "2026-11-03",
+      "authors": [
+        "CaxCadu"
+      ],
+      "status": "draft",
+      "sources_count": 2,
+      "path": "skills/lgpd-compliance-check"
+    },
+    {
+      "id": "seo-brief",
+      "name": "SEO brief",
+      "version": "0.1.0",
+      "summary": "A people-first SEO content brief with title, headings, links and trust signals.",
+      "language": "en",
+      "areas": [
+        "marketing",
+        "creators"
+      ],
+      "profiles": [
+        "marketer",
+        "creator",
+        "business-owner"
+      ],
+      "tags": [
+        "seo",
+        "content",
+        "brief",
+        "copywriting",
+        "search"
+      ],
+      "region": null,
+      "level": [
+        "starting",
+        "experienced"
+      ],
+      "risk": "low",
+      "requires_scripts": false,
+      "last_researched": "2026-11-03",
+      "authors": [
+        "CaxCadu"
+      ],
+      "status": "draft",
+      "sources_count": 2,
+      "path": "skills/seo-brief"
+    },
+    {
+      "id": "soap-notes",
+      "name": "SOAP notes",
+      "version": "0.1.0",
+      "summary": "Organizes clinician-provided visit information into a draft SOAP note for review.",
+      "language": "en",
+      "areas": [
+        "health"
+      ],
+      "profiles": [
+        "health-professional"
+      ],
+      "tags": [
+        "clinical-documentation",
+        "soap",
+        "notes",
+        "healthcare"
+      ],
+      "region": null,
+      "level": [
+        "starting",
+        "experienced",
+        "expert"
+      ],
+      "risk": "high",
+      "requires_scripts": false,
+      "last_researched": "2026-11-03",
+      "authors": [
+        "CaxCadu"
+      ],
+      "status": "draft",
+      "sources_count": 1,
+      "path": "skills/soap-notes"
+    },
+    {
+      "id": "study-planner",
+      "name": "Study planner",
+      "version": "0.1.0",
+      "summary": "Builds a spaced, self-testing study schedule for an exam or subject.",
+      "language": "en",
+      "areas": [
+        "education",
+        "general"
+      ],
+      "profiles": [
+        "student",
+        "curious"
+      ],
+      "tags": [
+        "study",
+        "exam",
+        "spaced-practice",
+        "practice-testing",
+        "planning"
+      ],
+      "region": null,
+      "level": [
+        "starting",
+        "experienced"
+      ],
+      "risk": "low",
+      "requires_scripts": false,
+      "last_researched": "2026-11-03",
+      "authors": [
+        "CaxCadu"
+      ],
+      "status": "draft",
+      "sources_count": 1,
+      "path": "skills/study-planner"
+    },
+    {
+      "id": "weekly-review",
+      "name": "Weekly review",
+      "version": "0.1.0",
+      "summary": "A guided weekly review: clear inboxes, update lists, pick next week's top three.",
+      "language": "en",
+      "areas": [
+        "general"
+      ],
+      "profiles": [
+        "curious",
+        "student",
+        "developer",
+        "marketer",
+        "business-owner",
+        "creator",
+        "designer",
+        "lawyer",
+        "health-professional",
+        "finance-professional"
+      ],
+      "tags": [
+        "productivity",
+        "planning",
+        "gtd",
+        "review",
+        "tasks"
+      ],
+      "region": null,
+      "level": [
+        "starting",
+        "experienced",
+        "expert"
+      ],
+      "risk": "low",
+      "requires_scripts": false,
+      "last_researched": "2026-11-03",
+      "authors": [
+        "CaxCadu"
+      ],
+      "status": "draft",
+      "sources_count": 1,
+      "path": "skills/weekly-review"
+    }
+  ]
+}
