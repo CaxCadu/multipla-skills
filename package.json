@@ -19,7 +19,10 @@
     "build:registry": "tsx scripts/build-registry.ts",
     "check:registry": "tsx scripts/build-registry.ts --check",
     "test:registry": "tsx scripts/test-registry.ts",
-    "check": "npm run typecheck && npm run validate && npm run check:links && npm run check:registry && npm run test:validator && npm run test:registry"
+    "typecheck:server": "npm run typecheck -w multipla-skills",
+    "build:server": "npm run build -w multipla-skills",
+    "test:server": "npm test -w multipla-skills",
+    "check": "npm run typecheck && npm run typecheck:server && npm run validate && npm run check:links && npm run check:registry && npm run test:validator && npm run test:registry && npm run test:server"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",

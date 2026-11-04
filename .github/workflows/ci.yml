@@ -20,6 +20,8 @@ jobs:
       - run: npm ci
       - name: Typecheck scripts
         run: npm run typecheck
+      - name: Typecheck server
+        run: npm run typecheck:server
       - name: Validate skills and registry
         run: npm run validate
       - name: Check markdown links
@@ -30,3 +32,7 @@ jobs:
         run: npm run test:validator
       - name: Registry self-test
         run: npm run test:registry
+      - name: Server tests
+        run: npm run test:server
+      - name: Server builds
+        run: npm run build:server

@@ -71,13 +71,16 @@ multipla-skills/
 │   ├── profiles.json      # profile → areas/tags map
 │   └── index.json         # generated from skills/*/skill.json (do not edit by hand)
 └── packages/
-    └── server/            # TypeScript MCP server (not created yet)
+    └── server/            # TypeScript MCP server
         ├── src/
-        │   ├── index.ts
-        │   ├── tools/
-        │   ├── quiz/
-        │   ├── matcher/
-        │   └── adapters/
+        │   ├── index.ts       # stdio entry point
+        │   ├── server.ts      # tools, prompts, resources (M4, done)
+        │   ├── catalog.ts     # reads registry/index.json and skill files (M4, done)
+        │   ├── errors.ts      # structured error results (M4, done)
+        │   ├── quiz/          # planned (M5)
+        │   ├── matcher/       # planned (M6)
+        │   └── adapters/      # planned (M7)
+        ├── test/              # vitest
         └── package.json
 ```
 

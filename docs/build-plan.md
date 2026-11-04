@@ -8,8 +8,8 @@ The step-by-step plan to build Multipla Skills, split into milestones. High-leve
 
 | | |
 |---|---|
-| **Current milestone** | 🔄 **M2: First skills batch** |
-| **Next** | ⏳ M4: MCP server MVP (serve mode) |
+| **Current milestone** | 🔄 **M4: MCP server MVP**: code done, manual tests pending. 🔄 **M2** is also open, waiting on review |
+| **Next** | ⏳ M5: Profile quiz + local profile store |
 | **Last completed** | ✅ M3: Registry index build (M1 before it: `9dd21f5`, CI green) |
 
 | # | Milestone | Phase | Status |
@@ -18,8 +18,8 @@ The step-by-step plan to build Multipla Skills, split into milestones. High-leve
 | M1 | [Repo tooling + skill validation](#m1-repo-tooling--skill-validation) | 1 | ✅ Done |
 | M2 | [First skills batch](#m2-first-skills-batch) | 1 | 🔄 Current |
 | M3 | [Registry index build](#m3-registry-index-build) | 1 | ✅ Done |
-| M4 | [MCP server MVP (serve mode)](#m4-mcp-server-mvp-serve-mode) | 2 | ⏳ Next |
-| M5 | [Profile quiz + local profile store](#m5-profile-quiz--local-profile-store) | 3 | ⬜ Planned |
+| M4 | [MCP server MVP (serve mode)](#m4-mcp-server-mvp-serve-mode) | 2 | 🔄 Current |
+| M5 | [Profile quiz + local profile store](#m5-profile-quiz--local-profile-store) | 3 | ⏳ Next |
 | M6 | [Matcher + recommend_skills](#m6-matcher--recommend_skills) | 3 | ⬜ Planned |
 | M7 | [Install mode + Claude adapter](#m7-install-mode--claude-adapter) | 4 | ⬜ Planned |
 | M8 | [v0.1.0 release on npm](#m8-v010-release-on-npm) | 4 | ⬜ Planned |
@@ -118,13 +118,14 @@ Legend: ✅ done · 🔄 in progress · ⏳ next up · ⬜ planned
 **Goal:** A working MCP server over stdio that lists and serves skills; usable from Claude.
 **Depends on:** M3.
 
-- [ ] `packages/server` (TypeScript, `@modelcontextprotocol/sdk`, stdio)
-- [ ] Tools: `list_skills`, `get_skill`
-- [ ] One MCP prompt per skill; resources `skill://<id>` and `skill://<id>/references/<file>`
-- [ ] Structured errors (`unknown_skill`, …) per [mcp-server.md](mcp-server.md)
-- [ ] Unit tests (vitest)
+- [x] `packages/server` (TypeScript, `@modelcontextprotocol/sdk`, stdio)
+- [x] Tools: `list_skills`, `get_skill`
+- [x] One MCP prompt per skill; resources `skill://<id>` and `skill://<id>/references/<file>`
+- [x] Structured errors (`unknown_skill`, …) per [mcp-server.md](mcp-server.md)
+- [x] Unit tests (vitest, 12 tests over an in-memory client) and CI steps (typecheck, tests, build)
+- [x] Checked over real stdio with a scripted MCP client (10 prompts, 30 resources, tools, error case)
 - [ ] Manual test with MCP Inspector
-- [ ] Manual test in Claude Code via `claude mcp add` pointing at the local build
+- [ ] Manual test in Claude Code via `claude mcp add` pointing at the local build (see [mcp-server.md](mcp-server.md#running-it-from-a-clone))
 
 **Done when:** Claude Code can list skills and load one through the server.
 
